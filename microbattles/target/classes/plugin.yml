@@ -1,0 +1,8 @@
+main: online.nasgar.PruebaAPI
+name: PruebaAPI
+version: 1.0.1
+
+api-version: 1.16
+api: "1.17"
+
+author: Nasgar Network
