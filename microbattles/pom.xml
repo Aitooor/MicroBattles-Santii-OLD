@@ -49,7 +49,7 @@
       <artifactId>api</artifactId>
       <version>1.0.1</version>
       <scope>system</scope>
-      <systemPath>/Users/aitorarias/Desktop/API/API.jar</systemPath>
+      <systemPath>/Users/aitorarias/Desktop/JAVA/API/API.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>com.mojang</groupId>
