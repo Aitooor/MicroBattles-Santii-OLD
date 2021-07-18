@@ -3,7 +3,6 @@ package online.nasgar;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import online.nasgar.menus.MenuInfo;
 import online.nasgar.menus.MenuPrincipal;
 import online.nasgar.utils.Utils;
 
@@ -41,7 +40,6 @@ public class MicroBattles extends JavaPlugin {
 
     public void Menus() {
         this.getCommand("menu").setExecutor(new MenuPrincipal());
-        this.getCommand("info").setExecutor(new MenuInfo());
     }
 
 }
