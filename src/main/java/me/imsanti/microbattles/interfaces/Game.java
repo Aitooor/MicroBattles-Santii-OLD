@@ -20,5 +20,4 @@ public abstract class Game {
             getPlayers().get(player).getPlayer().sendMessage(ColorUtils.color(message));
         });
     }
-gi
 }

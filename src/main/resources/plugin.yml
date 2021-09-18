@@ -3,3 +3,6 @@ version: ${project.version}
 main: me.imsanti.microbattles.MicroBattles
 authors: [ lSantih ]
 description: Private MicroBattles plugin developed for Nasgar Network
+commands:
+  microbattles:
+    description: Main plugin command.

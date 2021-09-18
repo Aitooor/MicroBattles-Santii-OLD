@@ -2,11 +2,9 @@ package me.imsanti.microbattles.game.team;
 
 import org.bukkit.ChatColor;
 
-import java.awt.*;
-
 public enum TeamColor {
 
-    BLUE(),
+    BLUE,
     RED,
     GREEN,
     YELLOW;

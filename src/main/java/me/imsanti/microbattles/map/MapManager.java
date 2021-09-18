@@ -1,5 +1,6 @@
 package me.imsanti.microbattles.map;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class MapManager {
@@ -7,8 +8,13 @@ public class MapManager {
     private final HashMap<String, Map> loadedMaps = new HashMap<>();
 
 
-    public void loadMap(final String name) {
-        final Map map = new Map(name);
+    public void loadMap(final String name, final int minPlayers, final int maxPlayers) {
+        final Map map = new Map(minPlayers, maxPlayers, name, new ArrayList<>());
         loadedMaps.put(name, map);
     }
+
+    public Map getMap(final String mapName) {
+        return loadedMaps.get(mapName);
+    }
+
 }
