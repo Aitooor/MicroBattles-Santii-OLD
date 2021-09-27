@@ -27,20 +27,29 @@ public class MicroBattlesCommand implements CommandExecutor {
 
         final Player player = (Player) sender;
 
+        if(args.length < 1) {
+            sendHelp(player);
+            return true;
+        }
+
         switch (args[0].toLowerCase()) {
             case "arena":
+                if(args.length < 3) {
+                    sendArenaHelp(player);
+                    return true;
+                }
                 final MapManager mapManager = MicroBattles.getInstance().getMapManager();
                 switch (args[1].toLowerCase()) {
                     case "create":
                         final String arenaName = args[2];
                         player.sendMessage(ColorUtils.color("&aHas creado la Arena &e " + arenaName));
 
-                        ByteArrayDataOutput out = ByteStreams.newDataOutput();
-                        out.writeUTF("Connect");
-                        out.writeUTF(arenaName.toLowerCase());
-
-                        player.sendPluginMessage(MicroBattles.getInstance(), "BungeeCord", out.toByteArray());
-                        mapManager.loadMap(arenaName, 0, 0);
+//                        ByteArrayDataOutput out = ByteStreams.newDataOutput();
+//                        out.writeUTF("Connect");
+//                        out.writeUTF(arenaName.toLowerCase());
+//
+//                        player.sendPluginMessage(MicroBattles.getInstance(), "BungeeCord", out.toByteArray());
+                        mapManager.loadMap(arenaName, 0, 0, false);
                         break;
 
                     case "setminplayers":
@@ -91,8 +100,68 @@ public class MicroBattlesCommand implements CommandExecutor {
                         player.sendMessage(ColorUtils.color("&aUbicación del team establecida a tu ubicación actual"));
 
                         break;
+
+                    case "update":
+                        //microbattles arena update (arena)
+
+                        mapManager.getMap(args[2]).updateMapToConfig();
+
+//                        MicroBattles.getInstance().getMySQLFile().registerMap(mapManager.getMap(args[2]));
+                        player.sendMessage(ColorUtils.color("&9Arena actualizada."));
+                        break;
+
+                    case "enable":
+                        mapManager.getMap(args[2]).setEnabled(true);
+                        player.sendMessage(ColorUtils.color("&6Mapa activado."));
+                        break;
+
+                    case "disable":
+                        mapManager.getMap(args[2]).setEnabled(false);
+                        player.sendMessage(ColorUtils.color("&cMapa desactivado."));
+                        break;
+
+                    default:
+                        sendArenaHelp(player);
+                        break;
                 }
+
+                break;
+
+            default:
+                sendHelp(player);
+
         }
         return true;
     }
+
+    private void sendArenaHelp(final Player player) {
+        player.sendMessage(ColorUtils.color("&8&m+-------------------------------+"));
+        player.sendMessage(ColorUtils.color("&6&lMicroBattles  &8| &aArena"));
+        player.sendMessage("");
+        player.sendMessage(ColorUtils.color("&9Avaible Commands:"));
+        player.sendMessage(ColorUtils.color(""));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena create (arena)"));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena setminplayers (arena)"));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena setmaxplayers (arena)"));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena addteam (arena)"));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena setteamlocation (arena)"));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena enable (arena)"));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena disable (arena)"));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena update (arena)"));
+
+        player.sendMessage("");
+        player.sendMessage(ColorUtils.color("&8&m+-------------------------------+"));
+    }
+
+    private void sendHelp(final Player player) {
+        player.sendMessage(ColorUtils.color("&8&m+-------------------------------+"));
+        player.sendMessage(ColorUtils.color("&6&lMicroBattles  &8| &aBeta Version"));
+        player.sendMessage("");
+        player.sendMessage(ColorUtils.color("&cAdmin Commands:"));
+        player.sendMessage(ColorUtils.color(""));
+        player.sendMessage(ColorUtils.color("&e/microbattles arena &8| &7Arena System"));
+        player.sendMessage("");
+        player.sendMessage(ColorUtils.color("&8&m+-------------------------------+"));
+    }
+
 }

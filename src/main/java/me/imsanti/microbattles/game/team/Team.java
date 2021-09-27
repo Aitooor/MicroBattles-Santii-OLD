@@ -19,6 +19,10 @@ public class Team {
         return location;
     }
 
+    public TeamColor getTeamColor() {
+        return teamColor;
+    }
+
     public void setLocation(Location location) {
         this.location = location;
     }
