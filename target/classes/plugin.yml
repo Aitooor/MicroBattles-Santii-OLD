@@ -1,0 +1,8 @@
+name: MicroBattles
+version: 1.0-SNAPSHOT
+main: me.imsanti.microbattles.MicroBattles
+authors: [ lSantih ]
+description: Private MicroBattles plugin developed for Nasgar Network
+commands:
+  microbattles:
+    description: Main plugin command.
