@@ -5,7 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="55554888-4334-44a2-8121-253e4be1a983" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MicroBattles.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MicroBattles.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/MicroBattles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/MicroBattles.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/commands/MicroBattlesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/commands/MicroBattlesCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/enums/GameType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/GamePlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/team/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/team/TeamColor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/types/SquadGame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/interfaces/Game.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/listeners/SetupListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/listeners/SetupListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/managers/GameManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/managers/PlayerManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/map/Map.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/map/MapManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/map/MapManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/setup/SetupManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/CoreFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/DataType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/StorageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/StorageManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/list/ConfigFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/utils/ColorUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="e06ad35f-ade1-4be6-a913-77389719e120" />
   </component>
   <component name="ProjectId" id="1yiZG2hLF3S0IZEOug7RGUucHDQ" />
   <component name="ProjectViewState">
@@ -26,6 +51,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
