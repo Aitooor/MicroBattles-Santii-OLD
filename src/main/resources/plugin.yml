@@ -1,5 +1,5 @@
 name: MicroBattles
 version: ${project.version}
-main: me.imsanti.microbattles.MicroBattles
+main: online.nasgar.microbattles.MicroBattles
 authors: [ lSantih ]
 description: Private MicroBattles plugin developed for Nasgar Network
