@@ -4,35 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="55554888-4334-44a2-8121-253e4be1a983" name="Changes" comment="project update 30.09.2021">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/MicroBattles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/MicroBattles.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/commands/MicroBattlesCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/commands/MicroBattlesCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/enums/GameType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/enums/GameType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/GamePlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/game/GamePlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/team/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/game/team/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/team/TeamColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/game/team/TeamColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/game/types/SquadGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/game/types/SquadGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/interfaces/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/interfaces/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/listeners/SetupListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/listeners/SetupListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/managers/GameManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/managers/GameManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/managers/PlayerManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/managers/PlayerManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/map/Map.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/map/Map.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/map/MapManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/map/MapManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/setup/SetupManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/setup/SetupManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/CoreFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/storage/CoreFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/DataType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/storage/DataType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/StorageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/storage/StorageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/list/ArenaFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/storage/list/ArenaFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/list/ConfigFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/storage/list/ConfigFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/storage/list/MySQLFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/storage/list/MySQLFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/me/imsanti/microbattles/utils/ColorUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/utils/ColorUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+    <list default="true" id="55554888-4334-44a2-8121-253e4be1a983" name="Changes" comment="domain change to online.nasgar.microbattles">
+      <change afterPath="$PROJECT_DIR$/src/main/java/online/nasgar/microbattles/game/GameStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,6 +47,14 @@
       <option name="presentableId" value="Default" />
       <updated>1632736272497</updated>
     </task>
+    <task id="LOCAL-00001" summary="domain change to online.nasgar.microbattles">
+      <created>1632994109580</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632994109580</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -75,5 +68,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="domain change to online.nasgar.microbattles" />
+    <option name="LAST_COMMIT_MESSAGE" value="domain change to online.nasgar.microbattles" />
   </component>
 </project>
