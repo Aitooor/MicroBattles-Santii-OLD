@@ -70,4 +70,8 @@ public class SquadGame extends Game {
     public void broadcast(String message) {
         super.broadcast(message);
     }
+
+    public GameStatus getGameStatus() {
+        return gameStatus;
+    }
 }
