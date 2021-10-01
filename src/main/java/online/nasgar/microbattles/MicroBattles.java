@@ -1,6 +1,8 @@
 package online.nasgar.microbattles;
 
 import online.nasgar.microbattles.commands.MicroBattlesCommand;
+import online.nasgar.microbattles.game.types.SquadGame;
+import online.nasgar.microbattles.interfaces.Game;
 import online.nasgar.microbattles.listeners.SetupListener;
 import online.nasgar.microbattles.managers.GameManager;
 import online.nasgar.microbattles.map.Map;
@@ -20,6 +22,7 @@ public final class MicroBattles extends JavaPlugin implements PluginMessageListe
     private boolean isSetupModeEnabled;
     private boolean isLobby;
     private Map selectedMap;
+    private Game currentGame;
     private final GameManager gameManager = new GameManager();
     private final SetupManager setupManager = new SetupManager();
     private final StorageManager storageManager = new StorageManager();
@@ -36,6 +39,7 @@ public final class MicroBattles extends JavaPlugin implements PluginMessageListe
             mapManager.loadMap(config.getString("server-name"), config.getInt("min-players"), config.getInt("max-players"), true);
             Bukkit.getConsoleSender().sendMessage("The server is in PLAY-MODE. Map " + config.getString("server-name" + " selected to play."));
 
+            this.currentGame = new SquadGame(selectedMap);
         }
 //        mySQLFile.connect();
 //        if(mySQLFile.isConnected()) mySQLFile.setupSQL();
@@ -109,6 +113,10 @@ public final class MicroBattles extends JavaPlugin implements PluginMessageListe
 
     public Map getSelectedMap() {
         return selectedMap;
+    }
+
+    public Game getCurrentGame() {
+        return currentGame;
     }
 
     public StorageManager getStorageManager() {
