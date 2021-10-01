@@ -17,6 +17,7 @@ public class Map {
     private int minPlayers;
     private int maxPlayers;
     private boolean isEnabled;
+    private Location waitingLobbyLocation;
     private String serverName;
     private List<Team> createdTeams = new ArrayList<>();
 
@@ -96,6 +97,14 @@ public class Map {
 
     public void updateDataToMySQL() {
         
+    }
+
+    public void setWaitingLobbyLocation(Location waitingLobbyLocation) {
+        this.waitingLobbyLocation = waitingLobbyLocation;
+    }
+
+    public Location getWaitingLobbyLocation() {
+        return waitingLobbyLocation;
     }
 
     public boolean isEnabled() {
